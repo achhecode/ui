@@ -1,0 +1,25 @@
+Creating the APP using Bun:
+
+```sh
+bun create next-app@latest my-app
+```
+
+
+Adding the projects to git:
+
+```sh
+```
+
+```sh
+git init
+git add .
+git commit -m "Intial Commit"
+git remote add origin git@github-ac:achhecode/ui.git
+git branch -M main
+git push -u origin main
+```
+
+
+
+
+
