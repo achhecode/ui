@@ -20,6 +20,10 @@ git push -u origin main
 ```
 
 
+Adding support for Shadcn/UI:
 
+```sh
+bunx --bun shadcn@latest init
+```
 
 
