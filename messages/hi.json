@@ -1,11 +1,11 @@
 {
   "HomePage": {
-    "title": "Achhe Code!",
-    "home": "होम",
-    "services": "होम",
-    "insights": "होम",
-    "community": "होम",
-    "about": "होम",
-    "contact": "होम"
+    "title": "शीर्षक!",
+    "home": "घर",
+    "services": "सेवा",
+    "insights": "अंतर्दृष्टि",
+    "community": "सामुदायिक स्थल",
+    "about": "के बारे में",
+    "contact": "संपर्क"
   }
 }
