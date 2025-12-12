@@ -26,4 +26,10 @@ Adding support for Shadcn/UI:
 bunx --bun shadcn@latest init
 ```
 
+Add shadcn/ui component:
+
+```sh
+bunx --bun shadcn@latest add button input
+bunx --bun shadcn@latest add input-group
+```
 
