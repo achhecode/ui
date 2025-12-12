@@ -23,22 +23,33 @@ export function LanguageDropdown() {
     { code: "hi", display: "HI", flag: "🇮🇳" },
   ];
 
-  // Initialize with the current locale from the path
-  const currentLocale = pathname.split("/")[1];
-  const [lang, setLang] = useState(
-    languages.find((l) => l.code === currentLocale) || languages[0]
-  );
+  const [lang, setLang] = useState(languages[0]);
+  const [mounted, setMounted] = useState(false);
+
+  // Only run on client after hydration
+  useEffect(() => {
+    setMounted(true);
+
+    if (pathname) {
+      const currentLocale = pathname.split("/")[1];
+      const found = languages.find((l) => l.code === currentLocale);
+      if (found) setLang(found);
+    }
+  }, [pathname]);
 
   const changeLanguage = (l: { code: string; display: string; flag: string }) => {
     setLang(l);
 
-    // Replace locale in the path
+    // Replace locale in path
     const segments = pathname.split("/");
     segments[1] = l.code;
     const newPath = segments.join("/");
 
     router.push(newPath);
   };
+
+  // Avoid SSR mismatch
+  if (!mounted) return null;
 
   return (
     <DropdownMenu>
