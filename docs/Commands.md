@@ -33,3 +33,8 @@ bunx --bun shadcn@latest add button input
 bunx --bun shadcn@latest add input-group
 ```
 
+Adding internationalization(i18n) support:
+ 
+```sh
+bun install next-intl
+```

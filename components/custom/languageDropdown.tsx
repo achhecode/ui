@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 import {
   DropdownMenu,
@@ -8,39 +9,50 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 
 export function LanguageDropdown() {
-  const [lang, setLang] = useState({
-    code: "EN",
-    flag: "🇺🇸",
-  });
+  const router = useRouter();
+  const pathname = usePathname();
 
   const languages = [
-    { code: "EN", flag: "🇺🇸" },
-    { code: "AR", flag: "🇸🇦" },
-    { code: "HI", flag: "🇮🇳" },
+    { code: "en", display: "EN", flag: "🇺🇸" },
+    { code: "ar", display: "AR", flag: "🇸🇦" },
+    { code: "hi", display: "HI", flag: "🇮🇳" },
   ];
 
-  const changeLanguage = (l: { code: string; flag: string }) => {
+  // Initialize with the current locale from the path
+  const currentLocale = pathname.split("/")[1];
+  const [lang, setLang] = useState(
+    languages.find((l) => l.code === currentLocale) || languages[0]
+  );
+
+  const changeLanguage = (l: { code: string; display: string; flag: string }) => {
     setLang(l);
+
+    // Replace locale in the path
+    const segments = pathname.split("/");
+    segments[1] = l.code;
+    const newPath = segments.join("/");
+
+    router.push(newPath);
   };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className="flex items-center gap-2">
-          {lang.code}
+          {lang.display}
           <span className="text-xl">{lang.flag}</span>
           <ChevronDown className="w-4 h-4" />
         </Button>
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="start" className="min-w-[8rem]">
-
         {languages
-          .filter((l) => l.code !== lang.code) // ❗ hides selected language
+          .filter((l) => l.code !== lang.code)
           .map((l) => (
             <DropdownMenuItem
               key={l.code}
@@ -48,10 +60,9 @@ export function LanguageDropdown() {
               onClick={() => changeLanguage(l)}
             >
               <span className="text-xl">{l.flag}</span>
-              {l.code}
+              {l.display}
             </DropdownMenuItem>
           ))}
-
       </DropdownMenuContent>
     </DropdownMenu>
   );
