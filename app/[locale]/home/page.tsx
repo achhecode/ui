@@ -1,11 +1,13 @@
 import { Header } from "@/components/custom/header";
+import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function Home() {
   const t = useTranslations("HomePage");
+
   return (
-    <div>
+    <>
       <Header
         navItems={[
           { id: "home", label: t("home") },
@@ -17,10 +19,11 @@ export default function Home() {
         ]}
         searchPlaceholderValue={t("search")}
       />
-      {/* Hero Section */}
+
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative w-full h-[calc(100vh-80px)]">
+        <section className="relative w-full h-[calc(100vh-80px)] overflow-hidden">
+          
           {/* Background Image */}
           <Image
             src="/conny-schneider-xuTJZ7uD7PI-unsplash.jpg"
@@ -30,22 +33,35 @@ export default function Home() {
             className="object-cover"
           />
 
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40" />
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/50" />
 
-          {/* Centered Content */}
-          <div className="absolute inset-0 flex items-center justify-center text-center px-6">
-            <div className="text-white max-w-2xl">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          {/* Content */}
+          <div className="absolute inset-0 flex items-center justify-center px-6">
+            <div className="text-center text-white max-w-3xl space-y-6">
+
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 {t("tagline.message")}
               </h1>
-              <p className="text-lg md:text-xl opacity-90">
+
+              <p className="text-lg md:text-xl text-white/90">
                 {t("tagline.description")}
               </p>
+
+              <div className="pt-4">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-black hover:bg-white hover:text-cyan-500 transition"
+                >
+                  {t("tagline.hook")}
+                </Button>
+              </div>
+
             </div>
           </div>
         </section>
       </main>
-    </div>
+    </>
   );
 }
