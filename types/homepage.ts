@@ -25,15 +25,17 @@ export const ICONS: Record<string, LucideIcon> = {
 };
 
 export type Service = {
+  iconKey: string;
   title: string;
   description: string;
-  icon: keyof typeof ICONS; // string key
-};
-
-export type ServicesProps = {
-  services: Service[];
 };
 
 export type SearchProps = {
   placeholderValue: string;
+};
+
+export type ServicesProps = {
+  heading: string,
+  description: string,
+  services: Service[];
 };

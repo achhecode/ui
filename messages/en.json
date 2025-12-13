@@ -12,6 +12,46 @@
       "message": "Turning great ideas into good code",
       "description": "We design, build, and deliver software that scales.",
       "hook": "Start Your Journey"
+    },
+    "allServices_heading": "Our Services",
+    "allServices_description": "We deliver innovative technology solutions to help businesses grow.",
+    "allservices": {
+      "automation": {
+        "title": "Automation",
+        "description": "Streamline operations and boost efficiency through intelligent automation solutions."
+      },
+      "ai": {
+        "title": "Artificial Intelligence (AI)",
+        "description": "Leverage AI to drive smarter decisions, predictive insights, and innovation."
+      },
+      "data": {
+        "title": "Data Engineering",
+        "description": "Design scalable data pipelines and architectures for analytics and growth."
+      },
+      "security": {
+        "title": "Cybersecurity",
+        "description": "Protect your systems and data with enterprise-grade security strategies."
+      },
+      "banking": {
+        "title": "Banking Technology",
+        "description": "Build secure, compliant, and scalable fintech and banking solutions."
+      },
+      "software": {
+        "title": "Custom Software Development",
+        "description": "Tailored software solutions built to meet your business needs."
+      },
+      "cloud": {
+        "title": "Cloud Solutions",
+        "description": "Modernize infrastructure with cloud-native and hybrid solutions."
+      },
+      "consulting": {
+        "title": "IT Consulting",
+        "description": "Strategic guidance to align technology with business objectives."
+      },
+      "talent": {
+        "title": "Tech Talent Solutions",
+        "description": "Access skilled technology professionals to scale your teams faster."
+      }
     }
   }
 }

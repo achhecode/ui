@@ -1,11 +1,20 @@
 import { Header } from "@/components/custom/homepage/header";
 import { Hero } from "@/components/custom/homepage/hero";
 import { Services } from "@/components/custom/homepage/services";
-import { servicesData } from "@/data/servicesData";
+import { servicesKeys } from "@/data/homepage/servicesKeys";
+import { Service } from "@/types/homepage";
 import { useTranslations } from "next-intl";
+
 
 export default function Home() {
   const t = useTranslations("HomePage");
+
+  const servicesData = servicesKeys.map(s => ({
+    iconKey: s.iconKey,
+    title: t(s.titleKey),
+    description: t(s.descriptionKey),
+  }));
+
   return (
     <>
       <Header
@@ -28,7 +37,7 @@ export default function Home() {
         }}
       />
 
-      <Services services={servicesData}/>
+      <Services heading={t('allServices_heading')} description={t('allServices_description')} services={servicesData}/>
     </>
   );
 }

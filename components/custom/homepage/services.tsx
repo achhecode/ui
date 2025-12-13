@@ -1,8 +1,8 @@
 "use client";
 
-import { ICONS, ServicesProps } from "@/types/homepage";
+import { ICONS, Service, ServicesProps } from "@/types/homepage";
 
-export function Services({ services }: ServicesProps) {
+export function Services({ heading, description, services }: ServicesProps) {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -10,17 +10,17 @@ export function Services({ services }: ServicesProps) {
         {/* Section Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Our Services
+            {heading}
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            We deliver innovative technology solutions to help businesses grow.
+            {description}
           </p>
         </div>
 
         {/* Grid */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => {
-            const Icon = ICONS[service.icon]; // ✅ map key to icon
+            const Icon = ICONS[service.iconKey];
 
             return (
               <div
@@ -32,9 +32,7 @@ export function Services({ services }: ServicesProps) {
                 </div>
 
                 <h3 className="text-xl font-semibold">{service.title}</h3>
-                <p className="text-gray-600 text-sm mt-2">
-                  {service.description}
-                </p>
+                <p className="text-gray-600 text-sm mt-2">{service.description}</p>
               </div>
             );
           })}

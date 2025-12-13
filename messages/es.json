@@ -3,8 +3,8 @@
     "title": "Achhe Code!",
     "home": "Hogar",
     "services": "Servicios",
-    "insights": "Insights",
-    "community": "Perspectivas",
+    "insights": "Perspectivas",
+    "community": "comunidad",
     "about": "Acerca de",
     "contact": "Contacto",
     "search": "Buscar...",
@@ -12,6 +12,46 @@
       "message": "Convertir grandes ideas en buen código",
       "description": "Diseñamos, construimos y entregamos software escalable.",
       "hook": "Comience su viaje"
+    },
+    "allServices_heading": "Nuestros Servicios",
+    "allServices_description": "Ofrecemos soluciones tecnológicas innovadoras para ayudar a las empresas a crecer.",
+    "allservices": {
+      "automation": {
+        "title": "Automatización",
+        "description": "Optimice las operaciones y aumente la eficiencia mediante soluciones de automatización inteligente."
+      },
+      "ai": {
+        "title": "Inteligencia artificial (IA)",
+        "description": "Aproveche la IA para impulsar decisiones más inteligentes, conocimientos predictivos e innovación."
+      },
+      "data": {
+        "title": "Ingeniería de datos",
+        "description": "Diseñe arquitecturas y canales de datos escalables para análisis y crecimiento."
+      },
+      "security": {
+        "title": "Ciberseguridad",
+        "description": "Proteja sus sistemas y datos con estrategias de seguridad de nivel empresarial."
+      },
+      "banking": {
+        "title": "Tecnología bancaria",
+        "description": "Cree soluciones financieras y bancarias seguras, compatibles y escalables."
+      },
+      "software": {
+        "title": "Desarrollo de software personalizado",
+        "description": "Soluciones de software personalizadas diseñadas para satisfacer las necesidades de su negocio."
+      },
+      "cloud": {
+        "title": "Soluciones en la nube",
+        "description": "Modernice la infraestructura con soluciones híbridas y nativas de la nube."
+      },
+      "consulting": {
+        "title": "Consultoría TI",
+        "description": "Orientación estratégica para alinear la tecnología con los objetivos del negocio."
+      },
+      "talent": {
+        "title": "Soluciones de talento tecnológico",
+        "description": "Acceda a profesionales tecnológicos capacitados para escalar sus equipos más rápido."
+      }
     }
   }
 }
