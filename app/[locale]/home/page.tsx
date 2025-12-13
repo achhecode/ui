@@ -1,12 +1,11 @@
 import { Header } from "@/components/custom/homepage/header";
 import { Hero } from "@/components/custom/homepage/hero";
-import { Button } from "@/components/ui/button";
+import { Services } from "@/components/custom/homepage/services";
+import { servicesData } from "@/data/servicesData";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 export default function Home() {
   const t = useTranslations("HomePage");
-
   return (
     <>
       <Header
@@ -28,6 +27,8 @@ export default function Home() {
           hook: t("tagline.hook"),
         }}
       />
+
+      <Services services={servicesData}/>
     </>
   );
 }
