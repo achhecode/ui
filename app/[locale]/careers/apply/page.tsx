@@ -6,9 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Upload } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function ApplyNowPage() {
+  const router = useRouter();
+
   const [fileError, setFileError] = useState<string | null>(null);
   const [fileName, setFileName] = useState<string | null>(null);
 
@@ -33,6 +36,15 @@ export default function ApplyNowPage() {
     setFileName(file.name);
   }
 
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    // ✅ TODO: API call / backend integration here
+
+    // ✅ Redirect after successful submit
+    router.push("/careers/thank-you");
+  }
+
   return (
     <>
       <Header />
@@ -41,7 +53,9 @@ export default function ApplyNowPage() {
         <div className="max-w-4xl mx-auto px-6 py-20">
           {/* Heading */}
           <div className="text-center mb-14">
-            <h1 className="text-4xl font-bold text-gray-900">Apply Now</h1>
+            <h1 className="text-4xl font-bold text-gray-900">
+              Apply Now
+            </h1>
             <p className="mt-4 text-gray-600">
               Submit your application and take the next step in your career
               with Achhe Code.
@@ -50,7 +64,7 @@ export default function ApplyNowPage() {
 
           {/* Form Card */}
           <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               {/* Job ID */}
               <div>
                 <label className="block font-medium mb-1">
@@ -136,12 +150,14 @@ export default function ApplyNowPage() {
                 </label>
 
                 {fileError && (
-                  <p className="text-sm text-red-600 mt-2">{fileError}</p>
+                  <p className="text-sm text-red-600 mt-2">
+                    {fileError}
+                  </p>
                 )}
               </div>
 
               {/* Submit */}
-              <Button className="w-full mt-6">
+              <Button type="submit" className="w-full mt-6">
                 Submit Application
               </Button>
             </form>
