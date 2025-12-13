@@ -39,3 +39,34 @@ export type ServicesProps = {
   description: string,
   services: Service[];
 };
+
+type Client = {
+  name: string;
+  logo: string;
+};
+
+export type ClientsProps = {
+  clients: Client[];
+};
+
+type Partner = {
+  name: string;
+  logo: string;
+};
+
+export type PartnersProps = {
+  partners: Partner[];
+};
+
+export type VisionProps = {
+  title: string;
+  heading: string;
+  description: string;
+  image: string;
+};
+
+export type CareersProps = {
+  title: string;
+  description: string;
+  cta: string;
+};
