@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "title": "Achhe Code!",
+    "home": "Hogar",
+    "services": "Servicios",
+    "insights": "Insights",
+    "community": "Perspectivas",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "search": "Buscar...",
+    "tagline": {
+      "message": "Convertir grandes ideas en buen código",
+      "description": "Diseñamos, construimos y entregamos software escalable.",
+      "hook": "Comience su viaje"
+    }
+  }
+}
