@@ -1,10 +1,10 @@
 import Link from "next/link";
 import {
-  LinkedinIcon,
-  TwitterIcon,
-  FacebookIcon,
-  YoutubeIcon,
-} from "lucide-react";
+  FaLinkedinIn,
+  FaTwitter,
+  FaFacebookF,
+  FaYoutube,
+} from "react-icons/fa";
 
 export function Footer() {
   return (
@@ -31,21 +31,9 @@ export function Footer() {
               Who we are
             </h4>
             <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="/about" className="hover:text-white transition">
-                  About Achhe Code
-                </Link>
-              </li>
-              <li>
-                <Link href="/leadership" className="hover:text-white transition">
-                  Leadership
-                </Link>
-              </li>
-              <li>
-                <Link href="/values" className="hover:text-white transition">
-                  Our Values
-                </Link>
-              </li>
+              <li><Link href="/about" className="hover:text-white">About Achhe Code</Link></li>
+              <li><Link href="/leadership" className="hover:text-white">Leadership</Link></li>
+              <li><Link href="/values" className="hover:text-white">Our Values</Link></li>
             </ul>
           </div>
 
@@ -55,31 +43,11 @@ export function Footer() {
               Services
             </h4>
             <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="/services/automation" className="hover:text-white transition">
-                  Automation
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/ai" className="hover:text-white transition">
-                  Artificial Intelligence
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/data-engineering" className="hover:text-white transition">
-                  Data Engineering
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/cybersecurity" className="hover:text-white transition">
-                  Cybersecurity
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/consulting" className="hover:text-white transition">
-                  IT Consulting
-                </Link>
-              </li>
+              <li><Link href="/services/automation" className="hover:text-white">Automation</Link></li>
+              <li><Link href="/services/ai" className="hover:text-white">Artificial Intelligence</Link></li>
+              <li><Link href="/services/data-engineering" className="hover:text-white">Data Engineering</Link></li>
+              <li><Link href="/services/cybersecurity" className="hover:text-white">Cybersecurity</Link></li>
+              <li><Link href="/services/consulting" className="hover:text-white">IT Consulting</Link></li>
             </ul>
           </div>
 
@@ -89,11 +57,7 @@ export function Footer() {
               Quick links
             </h4>
             <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="/news" className="hover:text-white transition">
-                  News & PR
-                </Link>
-              </li>
+              <li><Link href="/news" className="hover:text-white">News & PR</Link></li>
             </ul>
           </div>
 
@@ -103,49 +67,29 @@ export function Footer() {
               Contact
             </h4>
             <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="/contact" className="hover:text-white transition">
-                  Get in Touch
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="mailto:contact@achhecode.com"
-                  className="hover:text-white transition"
-                >
-                  Email Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+1234567890"
-                  className="hover:text-white transition"
-                >
-                  Call Us
-                </a>
-              </li>
+              <li><Link href="/contact" className="hover:text-white">Get in Touch</Link></li>
+              <li><a href="mailto:contact@achhecode.com" className="hover:text-white">Email Us</a></li>
+              <li><a href="tel:+1234567890" className="hover:text-white">Call Us</a></li>
             </ul>
           </div>
-
         </div>
 
         {/* Divider */}
         <div className="border-t border-gray-800 my-10" />
 
-        {/* Bottom Bar */}
+        {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
 
-          {/* Copyright */}
           <p className="text-sm text-gray-400 text-center md:text-left">
             © {new Date().getFullYear()} Achhe Code. All rights reserved.
             <span className="mx-2">|</span>
-            <Link href="/privacy-policy" className="hover:text-white transition">
+            <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy
             </Link>
           </p>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 text-lg">
             <a
               href="https://www.linkedin.com/company/achhe-code"
               target="_blank"
@@ -153,36 +97,23 @@ export function Footer() {
               aria-label="LinkedIn"
               className="hover:text-white transition"
             >
-              <LinkedinIcon className="w-5 h-5" />
+              <FaLinkedinIn />
             </a>
 
-            <a
-              href="#"
-              aria-label="Twitter"
-              className="hover:text-white transition"
-            >
-              <TwitterIcon className="w-5 h-5" />
+            <a href="#" aria-label="Twitter" className="hover:text-white transition">
+              <FaTwitter />
             </a>
 
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="hover:text-white transition"
-            >
-              <FacebookIcon className="w-5 h-5" />
+            <a href="#" aria-label="Facebook" className="hover:text-white transition">
+              <FaFacebookF />
             </a>
 
-            <a
-              href="#"
-              aria-label="YouTube"
-              className="hover:text-white transition"
-            >
-              <YoutubeIcon className="w-5 h-5" />
+            <a href="#" aria-label="YouTube" className="hover:text-white transition">
+              <FaYoutube />
             </a>
           </div>
 
         </div>
-
       </div>
     </footer>
   );

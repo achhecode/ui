@@ -38,3 +38,9 @@ Adding internationalization(i18n) support:
 ```sh
 bun install next-intl
 ```
+
+Adding react-icons support:
+
+```sh
+bun install react-icons
+```
