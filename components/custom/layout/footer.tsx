@@ -136,7 +136,7 @@ export function Footer() {
           {/* Social Icons */}
           <div className="flex items-center gap-5 text-lg">
             <a
-              href="https://www.linkedin.com/company/achhe-code"
+              href="https://www.linkedin.com/in/achhe-code-74a211359/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -146,7 +146,7 @@ export function Footer() {
             </a>
 
             <a
-              href="#"
+              href="https://x.com/achhecode"
               aria-label="Twitter"
               className="hover:text-white transition"
             >
@@ -162,7 +162,7 @@ export function Footer() {
             </a>
 
             <a
-              href="#"
+              href="https://www.youtube.com/@achhecode"
               aria-label="YouTube"
               className="hover:text-white transition"
             >
