@@ -6,10 +6,14 @@ import {
 
 import { Search as SearchIcon } from "lucide-react";
 
-export function Search() {
+type SearchProps = {
+  placeholderValue: string;
+};
+
+export function Search({ placeholderValue }: SearchProps) {
   return (
     <InputGroup>
-      <InputGroupInput placeholder="Search..." />
+      <InputGroupInput placeholder={placeholderValue} />
 
       <InputGroupAddon>
         <SearchIcon className="w-4 h-4" />

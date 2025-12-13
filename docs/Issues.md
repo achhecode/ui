@@ -1,3 +1,5 @@
+# 1
+
 ```sh
 ## Error Type
 Recoverable Error
@@ -69,3 +71,4 @@ Next.js version: 16.0.10 (Turbopack)
 
 ```
 
+# 2

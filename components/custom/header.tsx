@@ -4,10 +4,13 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { LanguageDropdown } from "./languageDropdown";
 import { Search } from "./search";
-import { useTranslations } from "next-intl";
 
-export function Header() {
-  const t = useTranslations('HomePage');
+type HeaderProps = {
+  navItems: string[],
+  searchPlaceholderValue: string
+};
+
+export function Header({ navItems, searchPlaceholderValue }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full flex items-center justify-between px-6 py-3 bg-white shadow-sm">
 
@@ -19,21 +22,18 @@ export function Header() {
           width={50}
           alt="Company Logo"
         />
-
+        {/* Navbar */}
         <nav className="flex items-center gap-4">
-          <Button variant="secondary" className="btn-transparent">{t('home')}</Button>
-          <Button variant="secondary" className="btn-transparent">{t('services')}</Button>
-          <Button variant="secondary" className="btn-transparent">{t('insights')}</Button>
-          <Button variant="secondary" className="btn-transparent">{t('community')}</Button>
-          <Button variant="secondary" className="btn-transparent">{t('about')}</Button>
-          <Button variant="secondary" className="btn-transparent">{t('contact')}</Button>
+          {navItems.map((item) => (
+            <Button variant="secondary" className="btn-transparent">{item}</Button>
+          ))}
         </nav>
       </div>
 
       {/* RIGHT — Language + Search */}
       <div className="flex items-center gap-4">
         <LanguageDropdown />
-        <Search />
+        <Search placeholderValue={searchPlaceholderValue} />
       </div>
     </header>
   );
