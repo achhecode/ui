@@ -276,7 +276,7 @@ export default function AboutPage() {
               We’re always looking for innovative talent ready to make an
               impact.
             </p>
-            <Link href="/career">
+            <Link href="/careers">
               <Button variant="secondary">View Careers</Button>
             </Link>
           </div>
