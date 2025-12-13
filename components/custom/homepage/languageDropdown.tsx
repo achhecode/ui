@@ -9,16 +9,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import { languages } from "@/types/languages";
 
 export function LanguageDropdown() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const languages = [
-    { code: "en", display: "EN", flag: "🇺🇸" },
-    { code: "ar", display: "AR", flag: "🇸🇦" },
-    { code: "hi", display: "HI", flag: "🇮🇳" },
-  ];
+  
 
   // Determine current locale from the path
   const currentLocale = pathname.split("/")[1];
