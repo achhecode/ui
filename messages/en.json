@@ -93,5 +93,12 @@
     "careers_title": "Careers at Achhe Code",
     "careers_description": "We’re looking for innovative talent to join our team. Explore opportunities and submit your resume today.",
     "careers_cta": "View Open Positions"
+  },
+  "ServicesPage": {
+    "heading": "Services",
+    "description": "Comprehensive technology services designed to help your business innovate, scale, and succeed.",
+    "cta_heading": "Build Your Next Great Business Now",
+    "cta_description": "Get in touch to discuss how our services can support your goals.",
+    "cta_hook": "Contact Us"
   }
 }

@@ -93,5 +93,12 @@
     "careers_title": "Carreras profesionales en Achhe Code",
     "careers_description": "Buscamos personas con talento e innovadoras para unirse a nuestro equipo. Explora las oportunidades disponibles y envía tu currículum hoy mismo.",
     "careers_cta": "Ver puestos vacantes"
+  },
+  "ServicesPage": {
+    "heading": "Services",
+    "description": "Servicios tecnológicos integrales diseñados para ayudar a su empresa a innovar, crecer y tener éxito.",
+    "cta_heading": "Crea tu próximo gran negocio ahora.",
+    "cta_description": "Póngase en contacto con nosotros para hablar sobre cómo nuestros servicios pueden ayudarle a alcanzar sus objetivos.",
+    "cta_hook": "Contacta con nosotros"
   }
 }

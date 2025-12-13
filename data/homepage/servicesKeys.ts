@@ -1,4 +1,10 @@
-export const servicesKeys = [
+import type { Service } from "@/components/custom/services/services-grid";
+
+export const servicesKeys: {
+  iconKey: Service["iconKey"];
+  titleKey: string;
+  descriptionKey: string;
+}[] = [
   { iconKey: "automation", titleKey: "allservices.automation.title", descriptionKey: "allservices.automation.description" },
   { iconKey: "ai", titleKey: "allservices.ai.title", descriptionKey: "allservices.ai.description" },
   { iconKey: "data", titleKey: "allservices.data.title", descriptionKey: "allservices.data.description" },
