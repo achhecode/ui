@@ -122,16 +122,13 @@
 }
 
 @layer utilities {
-  .btn-transparent-green {
-    @apply bg-transparent text-green-700 hover:bg-green-500 hover:text-white;
-  }
 
   .btn-transparent {
-    @apply bg-transparent hover:bg-transparent hover:text-cyan-300 text-lg cursor-pointer;
+    @apply bg-transparent hover:bg-transparent hover:text-sky-600 text-lg cursor-pointer;
   }
 
   .hook-button{
-    @apply border-white text-black hover:bg-white hover:text-cyan-500 transition cursor-pointer;
+    @apply border-white text-black hover:bg-white hover:text-sky-800 transition cursor-pointer;
   }
 
   
