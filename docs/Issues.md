@@ -72,3 +72,29 @@ Next.js version: 16.0.10 (Turbopack)
 ```
 
 # 2
+
+
+```sh
+## Error Type
+Console Error
+
+## Error Message
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `Header`. See https://react.dev/link/warning-keys for more information.
+
+
+    at undefined.Home (app/[locale]/home/page.tsx:9:7)
+
+## Code Frame
+   7 |   return (
+   8 |     <div>
+>  9 |       <Header
+     |       ^
+  10 |         navItems={[
+  11 |           t('home'),
+  12 |           t('services'),
+
+Next.js version: 16.0.10 (Turbopack)
+
+```

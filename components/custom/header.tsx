@@ -5,15 +5,19 @@ import Image from "next/image";
 import { LanguageDropdown } from "./languageDropdown";
 import { Search } from "./search";
 
+type NavItem = {
+  id: string;
+  label: string;
+};
+
 type HeaderProps = {
-  navItems: string[],
-  searchPlaceholderValue: string
+  navItems: NavItem[];
+  searchPlaceholderValue: string;
 };
 
 export function Header({ navItems, searchPlaceholderValue }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full flex items-center justify-between px-6 py-3 bg-white shadow-sm">
-
       {/* LEFT — Logo + Nav */}
       <div className="flex items-center gap-6">
         <Image
@@ -25,7 +29,13 @@ export function Header({ navItems, searchPlaceholderValue }: HeaderProps) {
         {/* Navbar */}
         <nav className="flex items-center gap-4">
           {navItems.map((item) => (
-            <Button variant="secondary" className="btn-transparent">{item}</Button>
+            <Button
+              key={item.id}
+              variant="secondary"
+              className="btn-transparent"
+            >
+              {item.label}
+            </Button>
           ))}
         </nav>
       </div>
