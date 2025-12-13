@@ -5,27 +5,26 @@ import Image from "next/image";
 import { LanguageDropdown } from "../homepage/languageDropdown";
 import { Search } from "../homepage/search";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export function Header() {
   const t = useTranslations("Header");
 
-  const navItems=[
-            { id: "home", label: t("home") },
-            { id: "services", label: t("services") },
-            { id: "insights", label: t("insights") },
-            { id: "community", label: t("community") },
-            { id: "about", label: t("about") },
-            { id: "contact", label: t("contact") },
-          ];
-  const searchPlaceholderValue=t("search");
-  
+  const navItems = [
+    { id: "home", label: t("home"), href: "/home" },
+    { id: "services", label: t("services"), href: "/services" },
+    { id: "insights", label: t("insights"), href: "/insights" },
+    { id: "community", label: t("community"), href: "/community" },
+    { id: "about", label: t("about"), href: "/about" },
+    { id: "contact", label: t("contact"), href: "/contact" },
+  ];
+  const searchPlaceholderValue = t("search");
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-sm">
       <div className="flex items-center justify-between px-6 py-3">
-
         {/* LEFT — Logo + Brand + Nav */}
         <div className="flex items-center gap-8">
-
           {/* Logo + Brand */}
           <div className="flex items-center gap-2">
             <Image
@@ -42,13 +41,11 @@ export function Header() {
           {/* Navigation */}
           <nav className="flex items-center gap-4">
             {navItems.map((item) => (
-              <Button
-                key={item.id}
-                variant="secondary"
-                className="btn-transparent"
-              >
-                {item.label}
-              </Button>
+              <Link key={item.id} href={item.href}>
+                <Button variant="secondary" className="btn-transparent">
+                  {item.label}
+                </Button>
+              </Link>
             ))}
           </nav>
         </div>
@@ -58,7 +55,6 @@ export function Header() {
           <LanguageDropdown />
           <Search placeholderValue={searchPlaceholderValue} />
         </div>
-
       </div>
     </header>
   );
