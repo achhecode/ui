@@ -3,12 +3,10 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
+import { SearchProps } from "@/types/homepage";
 
 import { Search as SearchIcon } from "lucide-react";
 
-type SearchProps = {
-  placeholderValue: string;
-};
 
 export function Search({ placeholderValue }: SearchProps) {
   return (
