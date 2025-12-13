@@ -1,5 +1,5 @@
 {
-  "HomePage": {
+  "Header": {
     "title": "Achhe Code!",
     "home": "Hogar",
     "services": "Servicios",
@@ -7,7 +7,39 @@
     "community": "comunidad",
     "about": "Acerca de",
     "contact": "Contacto",
-    "search": "Buscar...",
+    "search": "Buscar..."
+  },
+  "Footer": {
+    "company_title": "Achhe Code!",
+    "company_description": "Convertimos grandes ideas en código de calidad. Creamos soluciones digitales fiables, escalables e inteligentes.",
+    "1": {
+      "title": "Quiénes somos",
+      "1": "Acerca de Achhe Code",
+      "2": "Liderazgo",
+      "3": "Nuestros valores"
+    },
+    "2": {
+      "title": "Servicios",
+      "1": "Automatización",
+      "2": "Inteligencia artificial",
+      "3": "Ingeniería de datos",
+      "4": "Ciberseguridad",
+      "5": "Consultoría de TI"
+    },
+    "3": {
+      "title": "Enlaces rápidos",
+      "1": "Noticias y comunicados de prensa"
+    },
+    "4": {
+      "title": "Contacto",
+      "1": "Ponte en contacto",
+      "2": "Envíanos un correo electrónico",
+      "3": "Llámanos"
+    },
+    "copyright_description": "Achhe Code. Todos los derechos reservados.",
+    "privacy_policy_heading": "política de privacidad"
+  },
+  "HomePage": {
     "tagline": {
       "message": "Convertir grandes ideas en buen código",
       "description": "Diseñamos, construimos y entregamos software escalable.",
@@ -60,37 +92,6 @@
     "vision_description": "Visualizamos un futuro en el que la tecnología permita a las organizaciones innovar más rápidamente, operar de forma más inteligente y expandirse a nivel global.",
     "careers_title": "Carreras profesionales en Achhe Code",
     "careers_description": "Buscamos personas con talento e innovadoras para unirse a nuestro equipo. Explora las oportunidades disponibles y envía tu currículum hoy mismo.",
-    "careers_cta": "Ver puestos vacantes",
-
-    "Footer": {
-      "company_title": "Achhe Code!",
-      "company_description": "Convertimos grandes ideas en código de calidad. Creamos soluciones digitales fiables, escalables e inteligentes.",
-      "1": {
-        "title": "Quiénes somos",
-        "1": "Acerca de Achhe Code",
-        "2": "Liderazgo",
-        "3": "Nuestros valores"
-      },
-      "2": {
-        "title": "Servicios",
-        "1": "Automatización",
-        "2": "Inteligencia artificial",
-        "3": "Ingeniería de datos",
-        "4": "Ciberseguridad",
-        "5": "Consultoría de TI"
-      },
-      "3": {
-        "title": "Enlaces rápidos",
-        "1": "Noticias y comunicados de prensa"
-      },
-      "4": {
-        "title": "Contacto",
-        "1": "Ponte en contacto",
-        "2": "Envíanos un correo electrónico",
-        "3": "Llámanos"
-      },
-      "copyright_description": "Achhe Code. Todos los derechos reservados.",
-      "privacy_policy_heading": "política de privacidad"
-    }
+    "careers_cta": "Ver puestos vacantes"
   }
 }

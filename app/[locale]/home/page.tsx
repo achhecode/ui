@@ -1,11 +1,11 @@
 import { Careers } from "@/components/custom/homepage/careers";
 import { Clients } from "@/components/custom/homepage/clients";
-import { Header } from "@/components/custom/homepage/header";
 import { Hero } from "@/components/custom/homepage/hero";
 import { Partners } from "@/components/custom/homepage/partners";
 import { Services } from "@/components/custom/homepage/services";
 import { Vision } from "@/components/custom/homepage/vision";
 import { Footer } from "@/components/custom/layout/footer";
+import { Header } from "@/components/custom/layout/header";
 import { clientsData } from "@/data/homepage/clientsData";
 import { partnersData } from "@/data/homepage/partnersData";
 import { servicesKeys } from "@/data/homepage/servicesKeys";
@@ -23,17 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <Header
-        navItems={[
-          { id: "home", label: t("home") },
-          { id: "services", label: t("services") },
-          { id: "insights", label: t("insights") },
-          { id: "community", label: t("community") },
-          { id: "about", label: t("about") },
-          { id: "contact", label: t("contact") },
-        ]}
-        searchPlaceholderValue={t("search")}
-      />
+      <Header />
 
       <Hero
         tagline={{

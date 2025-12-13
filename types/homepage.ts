@@ -72,13 +72,3 @@ export type CareersProps = {
   description: string;
   cta: string;
 };
-
-type NavItem = {
-  id: string;
-  label: string;
-};
-
-export type HeaderProps = {
-  navItems: NavItem[];
-  searchPlaceholderValue: string;
-};

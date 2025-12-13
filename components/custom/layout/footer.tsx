@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 
 export function Footer() {
-  const t = useTranslations("HomePage.Footer");
+  const t = useTranslations("Footer");
   return (
     <footer className="bg-gray-950 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-16">

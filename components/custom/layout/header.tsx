@@ -2,11 +2,23 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { LanguageDropdown } from "./languageDropdown";
-import { Search } from "./search";
-import { HeaderProps } from "@/types/homepage";
+import { LanguageDropdown } from "../homepage/languageDropdown";
+import { Search } from "../homepage/search";
+import { useTranslations } from "next-intl";
 
-export function Header({ navItems, searchPlaceholderValue }: HeaderProps) {
+export function Header() {
+  const t = useTranslations("Header");
+
+  const navItems=[
+            { id: "home", label: t("home") },
+            { id: "services", label: t("services") },
+            { id: "insights", label: t("insights") },
+            { id: "community", label: t("community") },
+            { id: "about", label: t("about") },
+            { id: "contact", label: t("contact") },
+          ];
+  const searchPlaceholderValue=t("search");
+  
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-sm">
       <div className="flex items-center justify-between px-6 py-3">
