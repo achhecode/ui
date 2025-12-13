@@ -128,6 +128,11 @@
 
   .btn-transparent {
     @apply bg-transparent hover:bg-transparent hover:text-cyan-300 text-lg cursor-pointer;
-
   }
+
+  .hook-button{
+    @apply border-white text-black hover:bg-white hover:text-cyan-500 transition cursor-pointer;
+  }
+
+  
 }

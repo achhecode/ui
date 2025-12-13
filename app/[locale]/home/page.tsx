@@ -52,7 +52,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-black hover:bg-white hover:text-cyan-500 transition"
+                  className="hook-button"
                 >
                   {t("tagline.hook")}
                 </Button>
