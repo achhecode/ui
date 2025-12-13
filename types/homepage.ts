@@ -46,6 +46,7 @@ type Client = {
 };
 
 export type ClientsProps = {
+  heading: string;
   clients: Client[];
 };
 
@@ -55,6 +56,7 @@ type Partner = {
 };
 
 export type PartnersProps = {
+  heading: string;
   partners: Partner[];
 };
 
@@ -69,4 +71,14 @@ export type CareersProps = {
   title: string;
   description: string;
   cta: string;
+};
+
+type NavItem = {
+  id: string;
+  label: string;
+};
+
+export type HeaderProps = {
+  navItems: NavItem[];
+  searchPlaceholderValue: string;
 };

@@ -4,16 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { LanguageDropdown } from "./languageDropdown";
 import { Search } from "./search";
-
-type NavItem = {
-  id: string;
-  label: string;
-};
-
-type HeaderProps = {
-  navItems: NavItem[];
-  searchPlaceholderValue: string;
-};
+import { HeaderProps } from "@/types/homepage";
 
 export function Header({ navItems, searchPlaceholderValue }: HeaderProps) {
   return (

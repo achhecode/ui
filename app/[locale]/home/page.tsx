@@ -46,21 +46,21 @@ export default function Home() {
       <Services heading={t('allServices_heading')} description={t('allServices_description')} services={servicesData}/>
 
 
-      <Clients clients={clientsData} />
+      <Clients heading={t('clients_heading')} clients={clientsData} />
 
-      <Partners partners={partnersData} />
+      <Partners heading={t('partners_heading')} partners={partnersData} />
 
       <Vision
-        title="Our Vision"
-        heading="Empowering Businesses Through Technology"
-        description="We envision a future where technology enables organizations to innovate faster, operate smarter, and scale globally."
+        title={t('vision_title')}
+        heading={t('vision_heading')}
+        description={t('vision_description')}
         image="/jhon-jim-5BIbTwXbTWk-unsplash.jpg"
       />
 
       <Careers
-        title="Careers at Achhe Code"
-        description="We’re looking for innovative talent to join our team. Explore opportunities and submit your resume today."
-        cta="View Open Positions"
+        title={t('careers_title')}
+        description={t('careers_description')}
+        cta={t('careers_cta')}
       />
       <Footer />
 

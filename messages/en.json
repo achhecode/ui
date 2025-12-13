@@ -52,6 +52,46 @@
         "title": "Tech Talent Solutions",
         "description": "Access skilled technology professionals to scale your teams faster."
       }
+    },
+    "clients_heading": "Trusted by Our Clients",
+    "partners_heading": "Our Partners",
+    "vision_title": "Our Vision",
+    "vision_heading": "Empowering Businesses Through Technology",
+    "vision_description": "We envision a future where technology enables organizations to innovate faster, operate smarter, and scale globally.",
+    "careers_title": "Careers at Achhe Code",
+    "careers_description": "We’re looking for innovative talent to join our team. Explore opportunities and submit your resume today.",
+    "careers_cta": "View Open Positions",
+
+    "Footer": {
+      "company_title": "Achhe Code!",
+      "company_description": "Turning great ideas into good code. We build reliable, scalable, and intelligent digital solutions.",
+      "1": {
+        "title": "Who we are",
+        "1": "About Achhe Code",
+        "2": "Leadership",
+        "3": "Our Values"
+      },
+      "2": {
+        "title": "Services",
+        "1": "Automation",
+        "2": "Artificial Intelligence",
+        "3": "Data Engineering",
+        "4": "Cybersecurity",
+        "5": "IT Consulting"
+      },
+      "3": {
+        "title": "Quick links",
+        "1": "News & PR"
+      },
+      "4": {
+        "title": "Contact",
+        "1": "Get in Touch",
+        "2": "Email Us",
+        "3": "Call Us"
+      },
+      "copyright_description": "Achhe Code. All rights reserved.",
+      "privacy_policy_heading": "Privacy Policy"
     }
   }
+
 }

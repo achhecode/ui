@@ -3,12 +3,12 @@ import Image from "next/image";
 
 
 
-export function Partners({ partners }: PartnersProps) {
+export function Partners({ heading, partners }: PartnersProps) {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-12">
-          Our Partners
+          {heading}
         </h2>
 
         <div className="flex flex-wrap justify-center gap-12">
