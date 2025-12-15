@@ -100,5 +100,222 @@
     "cta_heading": "Build Your Next Great Business Now",
     "cta_description": "Get in touch to discuss how our services can support your goals.",
     "cta_hook": "Contact Us"
+  },
+  "InsightsPage": {
+    "heading": "Insights",
+    "description": "Expert perspectives, technical deep dives, and real-world experiences from the Achhe Code team.",
+    "insights": {
+      "1": {
+        "title": "How AI is Transforming Enterprise Software",
+        "description": "Explore how AI-driven solutions are reshaping modern businesses.",
+        "category": "AI"
+      },
+      "2": {
+        "title": "Cloud Migration: Best Practices",
+        "description": "A step-by-step guide to successful cloud transformation.",
+        "category": "Cloud"
+      },
+      "3": {
+        "title": "Cybersecurity in FinTech",
+        "description": "Key security challenges and solutions for banking platforms.",
+        "category": "Security"
+      },
+      "cta_hook": "Read More →"
+    }
+  },
+  "CommunityPage": {
+    "heading": "Our Community",
+    "description": "We believe in growing together by sharing knowledge, supporting talent, and building meaningful connections.",
+    "initiatives": {
+      "1": {
+        "title": "Open Source Contributions",
+        "description": "We actively contribute to open-source projects and share knowledge."
+      },
+      "2": {
+        "title": "Tech Meetups",
+        "description": "Hosting and participating in developer meetups and hackathons."
+      },
+      "3": {
+        "title": "Mentorship Programs",
+        "description": "Guiding young developers and fresh graduates in their careers."
+      }
+    },
+    "cta": {
+      "title": "Join the Achhe Code Community",
+      "description": "Collaborate, learn, and grow with us.",
+      "hook": "Get Involved"
+    }
+  },
+  "AboutPage": {
+    "heading": "About Achhe Code",
+    "description": "Achhe Code is a technology-driven company focused on building scalable, secure, and future-ready digital solutions for businesses worldwide.",
+    "vision": {
+      "title": "Our Vision",
+      "description": "To empower organizations with technology that accelerates innovation, efficiency, and sustainable growth across industries."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We turn complex ideas into reliable, scalable software by combining deep technical expertise with a human-centric approach."
+    },
+    "services": {
+      "title": "What We Do",
+      "description": "From automation to AI-driven platforms, we deliver technology solutions that matter.",
+      "hook": "Explore Services"
+    },
+    "values": {
+      "title": "Our Core Values",
+      "integrity": {
+        "title": "Integrity",
+        "description": "We act with honesty, transparency, and accountability in everything we do."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We challenge the status quo and continuously push boundaries."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for high-quality outcomes and long-term value creation."
+      }
+    },
+    "leadership": {
+      "title": "Leadership",
+      "description": "Experienced leaders guiding Achhe Code with clarity, vision, and purpose."
+    },
+    "why": {
+      "title": "Why Achhe Code?",
+      "description": "We combine engineering excellence, business understanding, and long-term partnerships to deliver technology that truly works.",
+      "1": {
+        "title": "Client-Centric",
+        "description": "Solutions designed around real business needs."
+      },
+      "2": {
+        "title": "Scalable Engineering",
+        "description": "Built to grow with your organization."
+      },
+      "3": {
+        "title": "Trusted Partnerships",
+        "description": "Long-term collaboration over short-term delivery."
+      }
+    },
+    "careers": {
+      "cta": {
+        "title": "Join Our Team",
+        "description": "We’re always looking for innovative talent ready to make an impact.",
+        "hook": "View Careers"
+      }
+    },
+    "team_members": {
+      "1": {
+        "name": "A R Danish",
+        "role": "Founder & CEO"
+      },
+      "2": {
+        "name": "Md Murad",
+        "role": "Vice President - Operations"
+      },
+      "3": {
+        "name": "Arshad Iqbal",
+        "role": "Head of Engineering"
+      },
+      "4": {
+        "name": "Md Aatif",
+        "role": "Senior Director - Business Development"
+      },
+      "5": {
+        "name": "Md Gulrez",
+        "role": "Development Lead"
+      }
+    }
+  },
+  "ContactPage": {
+    "heading": "Contact Us",
+    "description": "Let’s talk about how Achhe Code can help transform your ideas into scalable technology solutions.",
+    "offices": {
+      "title": "Our Office – India"
+    },
+    "contact_info_card": {
+      "location_title": "Office Location",
+      "1": {
+        "name": "Achhe Code Pvt Ltd",
+        "address": "Bengaluru, Karnataka, India",
+        "mail": "contact@achhecode.com",
+        "phone": "+91 99999 99999"
+      }
+    },
+    "form": {
+      "name_label": "Full Name",
+      "email_label": "Email",
+      "phone_label": "Phone No",
+      "message_label": "Your Message",
+      "agree": "I agree to the",
+      "term": "Terms of Use",
+      "agree_2": "By submitting this form, you agree to receive text messages (SMS) from Achhe Code Pvt Ltd.",
+      "submit": "Submit"
+    },
+    "services": {
+      "title": "Looking for ways Achhe Code can help you?",
+      "description": "Explore our Service offerings tailored to your business needs.",
+      "cta": "View Services"
+    },
+    "term_modal": {
+      "title": "Terms of Use",
+      "description": "By using this site, you agree to our terms and conditions regarding data usage, communication, and privacy.",
+      "close": "Close"
+    }
+  },
+  "CareersPage": {
+    "heading": "Careers at Achhe Code",
+    "description": "We’re building a team of innovators, problem-solvers, and technology enthusiasts shaping the future together.",
+    "why": {
+      "title": "Why Work With Achhe Code?",
+      "description": "At Achhe Code, we believe in empowering our people to do their best work. We foster a culture of learning, ownership, and collaboration.",
+      "highlights": {
+        "1": "Challenging and meaningful projects",
+        "2": "Remote-friendly work culture",
+        "3": "Learning & growth opportunities",
+        "4": "Transparent leadership",
+        "5": "Work-life balance"
+      }
+    },
+    "culture_and_values": {
+      "heading": "Our Culture",
+      "description": "We value integrity, innovation, and excellence in everything we do. Our culture is built on trust, curiosity, and continuous improvement.",
+      "1": {
+        "title": "Innovation",
+        "description": "We encourage creative thinking and bold ideas."
+      },
+      "2": {
+        "title": "Ownership",
+        "description": "Everyone takes responsibility and drives impact."
+      },
+      "3": {
+        "title": "Growth",
+        "description": "Continuous learning is part of our DNA."
+      }
+    },
+    "open_positions": {
+      "title": "Open Positions",
+      "description": "Explore opportunities to grow your career with us.",
+      "locations": {
+        "1": "Remote / India",
+        "2": "Remote"
+      },
+      "types": {
+        "1": "Full-time",
+        "2": "Contract"
+      },
+      "titles": {
+        "1": "Frontend Developer",
+        "2": "Backend Developer",
+        "3": "AI / ML Engineer",
+        "4": "DevOps Engineer"
+      },
+      "apply_now": "Apply Now"
+    },
+    "cta": {
+      "title": "Don’t See the Right Role?",
+      "description": "We’re always open to connecting with talented people. Send us your resume and we’ll get in touch.",
+      "hook": "Submit Your Resume"
+    }
   }
 }

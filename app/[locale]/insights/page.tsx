@@ -2,29 +2,31 @@ import { Header } from "@/components/custom/layout/header";
 import { Footer } from "@/components/custom/layout/footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
-const insights = [
-  {
-    title: "How AI is Transforming Enterprise Software",
-    description:
-      "Explore how AI-driven solutions are reshaping modern businesses.",
-    category: "AI",
-  },
-  {
-    title: "Cloud Migration: Best Practices",
-    description:
-      "A step-by-step guide to successful cloud transformation.",
-    category: "Cloud",
-  },
-  {
-    title: "Cybersecurity in FinTech",
-    description:
-      "Key security challenges and solutions for banking platforms.",
-    category: "Security",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function InsightsPage() {
+  const t = useTranslations("InsightsPage");
+
+  const insights = [
+    {
+      title: t('insights.1.title'),
+      description:
+        t('insights.1.description'),
+      category: t('insights.1.category'),
+    },
+    {
+      title: t('insights.2.title'),
+      description: t('insights.2.description'),
+      category: t('insights.2.category'),
+    },
+    {
+      title: t('insights.3.title'),
+      description:
+        t('insights.3.description'),
+      category: t('insights.3.category'),
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -32,10 +34,9 @@ export default function InsightsPage() {
       <main className="pt-24">
         {/* Hero */}
         <section className="bg-gray-50 py-20 text-center">
-          <h1 className="text-4xl font-bold mb-4">Insights</h1>
+          <h1 className="text-4xl font-bold mb-4">{t('heading')}</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Expert perspectives, technical deep dives, and real-world
-            experiences from the Achhe Code team.
+            {t('description')}
           </p>
         </section>
 
@@ -53,12 +54,10 @@ export default function InsightsPage() {
                 <h3 className="text-xl font-semibold mt-3 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  {item.description}
-                </p>
+                <p className="text-gray-600 mb-4">{item.description}</p>
                 <Link href="#">
                   <Button variant="link" className="px-0">
-                    Read More →
+                    {t('cta_hook')}
                   </Button>
                 </Link>
               </div>

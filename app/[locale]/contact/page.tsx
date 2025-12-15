@@ -9,8 +9,10 @@ import { MapPin, Mail, Phone, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function ContactPage() {
+  const t = useTranslations("ContactPage");
   const [showTerms, setShowTerms] = useState(false);
 
   return (
@@ -22,12 +24,9 @@ export default function ContactPage() {
           {/* Heading */}
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-              Contact Us
+              {t("heading")}
             </h1>
-            <p className="mt-4 text-lg text-gray-600">
-              Let’s talk about how Achhe Code can help transform your ideas into
-              scalable technology solutions.
-            </p>
+            <p className="mt-4 text-lg text-gray-600">{t("description")}</p>
           </div>
 
           {/* Main Grid */}
@@ -45,22 +44,24 @@ export default function ContactPage() {
                 />
                 <div className="absolute inset-0 bg-black/30 flex items-end p-6">
                   <h2 className="text-white text-xl font-semibold">
-                    Our Office – India
+                    {t("offices.title")}
                   </h2>
                 </div>
               </div>
 
               {/* Contact Info Card */}
               <div className="bg-white rounded-2xl p-8 shadow-sm">
-                <h3 className="text-2xl font-semibold mb-6">Office Location</h3>
+                <h3 className="text-2xl font-semibold mb-6">
+                  {t("contact_info_card.location_title")}
+                </h3>
 
                 <div className="space-y-5 text-gray-700">
                   <div className="flex gap-4">
                     <MapPin className="text-cyan-600 shrink-0" />
                     <p>
-                      Achhe Code Pvt Ltd
+                      {t("contact_info_card.1.name")}
                       <br />
-                      Bengaluru, Karnataka, India
+                      {t("contact_info_card.1.address")}
                     </p>
                   </div>
 
@@ -70,14 +71,14 @@ export default function ContactPage() {
                       href="mailto:contact@achhecode.com"
                       className="hover:underline"
                     >
-                      contact@achhecode.com
+                      {t("contact_info_card.1.mail")}
                     </a>
                   </div>
 
                   <div className="flex gap-4">
                     <Phone className="text-cyan-600 shrink-0" />
                     <a href="tel:+919999999999" className="hover:underline">
-                      +91 99999 99999
+                      {t("contact_info_card.1.phone")}
                     </a>
                   </div>
                 </div>
@@ -88,17 +89,23 @@ export default function ContactPage() {
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <form className="space-y-6">
                 <div>
-                  <label className="block font-medium mb-1">Full Name *</label>
+                  <label className="block font-medium mb-1">
+                    {t("form.name_label")} *
+                  </label>
                   <Input required placeholder="Your full name" />
                 </div>
 
                 <div>
-                  <label className="block font-medium mb-1">Email *</label>
+                  <label className="block font-medium mb-1">
+                    {t("form.email_label")} *
+                  </label>
                   <Input type="email" required placeholder="you@email.com" />
                 </div>
 
                 <div>
-                  <label className="block font-medium mb-1">Phone No *</label>
+                  <label className="block font-medium mb-1">
+                    {t("form.phone_label")} *
+                  </label>
                   <div className="flex gap-3">
                     <Input className="w-24" placeholder="+91" required />
                     <Input placeholder="Phone number" required />
@@ -106,7 +113,9 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block font-medium mb-1">Your Message</label>
+                  <label className="block font-medium mb-1">
+                    {t("form.message_label")}
+                  </label>
                   <Textarea rows={4} placeholder="Tell us how we can help" />
                 </div>
 
@@ -115,27 +124,24 @@ export default function ContactPage() {
                   <label className="flex items-start gap-2">
                     <input type="checkbox" required />
                     <span>
-                      I agree to the{" "}
+                      {t("form.agree")}{" "}
                       <button
                         type="button"
                         className="text-cyan-600 underline"
                         onClick={() => setShowTerms(true)}
                       >
-                        Terms of Use
+                        {t("form.term")}
                       </button>
                     </span>
                   </label>
 
                   <label className="flex items-start gap-2">
                     <input type="checkbox" />
-                    <span>
-                      By submitting this form, you agree to receive text
-                      messages (SMS) from Achhe Code Pvt Ltd.
-                    </span>
+                    <span>{t("form.agree_2")}</span>
                   </label>
                 </div>
 
-                <Button className="w-full mt-4">Submit</Button>
+                <Button className="w-full mt-4">{t("form.submit")}</Button>
               </form>
             </div>
           </div>
@@ -143,15 +149,14 @@ export default function ContactPage() {
           {/* Services CTA */}
           <div className="mt-24 text-center">
             <h3 className="text-2xl font-semibold mb-3">
-              Looking for ways Achhe Code can help you?
+              {t("services.title")}
             </h3>
-            <p className="text-gray-600 mb-6">
-              Explore our Service offerings tailored to your business needs.
-            </p>
+            <p className="text-gray-600 mb-6">{t("services.description")}</p>
 
             <Link href="/services">
               <Button variant="outline" className="gap-2">
-                View Services <ArrowRight className="w-4 h-4" />
+                {t("services.cta")}
+                <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </div>
@@ -162,12 +167,15 @@ export default function ContactPage() {
       {showTerms && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
           <div className="bg-white max-w-lg w-full p-6 rounded-xl">
-            <h3 className="text-xl font-semibold mb-4">Terms of Use</h3>
+            <h3 className="text-xl font-semibold mb-4">
+              {t("term_modal.title")}
+            </h3>
             <p className="text-sm text-gray-600 mb-6">
-              By using this site, you agree to our terms and conditions
-              regarding data usage, communication, and privacy.
+              {t("term_modal.description")}
             </p>
-            <Button onClick={() => setShowTerms(false)}>Close</Button>
+            <Button onClick={() => setShowTerms(false)}>
+              {t("term_modal.close")}
+            </Button>
           </div>
         </div>
       )}

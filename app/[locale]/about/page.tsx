@@ -5,32 +5,38 @@ import { Footer } from "@/components/custom/layout/footer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-
-const teamMembers = [
-  { name: "A R Danish", image: "/team/ar.jpg", role: "Founder & CEO" },
-  {
-    name: "Md Murad",
-    image: "/team/murad.jpg",
-    role: "Vice President - Operations",
-  },
-  {
-    name: "Arshad Iqbal",
-    image: "/team/arshad.jpg",
-    role: "Head of Engineering",
-  },
-  {
-    name: "Md Aatif",
-    image: "/new.png",
-    role: "Senior Director - Business Development",
-  },
-  {
-    name: "Md Gulrez",
-    image: "/team/gullu.jpg",
-    role: "Development Lead",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
+  const t = useTranslations("AboutPage");
+
+  const teamMembers = [
+    {
+      name: t("team_members.1.name"),
+      image: "/team/1.jpg",
+      role: t("team_members.1.role"),
+    },
+    {
+      name: t("team_members.2.name"),
+      image: "/team/2.jpg",
+      role: t("team_members.2.role"),
+    },
+    {
+      name: t("team_members.3.name"),
+      image: "/team/3.jpg",
+      role: t("team_members.3.role"),
+    },
+    {
+      name: t("team_members.4.name"),
+      image: "/new.png",
+      role: t("team_members.4.role"),
+    },
+    {
+      name: t("team_members.5.name"),
+      image: "/team/5.jpg",
+      role: t("team_members.5.role"),
+    },
+  ];
   return (
     <>
       <Header />
@@ -40,13 +46,9 @@ export default function AboutPage() {
         <section className="bg-gray-50 py-24">
           <div className="max-w-5xl mx-auto text-center px-6">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-              About Achhe Code
+              {t("heading")}
             </h1>
-            <p className="mt-6 text-lg text-gray-600">
-              Achhe Code is a technology-driven company focused on building
-              scalable, secure, and future-ready digital solutions for
-              businesses worldwide.
-            </p>
+            <p className="mt-6 text-lg text-gray-600">{t("description")}</p>
           </div>
         </section>
 
@@ -56,11 +58,9 @@ export default function AboutPage() {
             {/* Vision */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
+                <h2 className="text-3xl font-bold mb-4">{t("vision.title")}</h2>
                 <p className="text-gray-600 text-lg">
-                  To empower organizations with technology that accelerates
-                  innovation, efficiency, and sustainable growth across
-                  industries.
+                  {t("vision.description")}
                 </p>
               </div>
 
@@ -87,11 +87,11 @@ export default function AboutPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+                <h2 className="text-3xl font-bold mb-4">
+                  {t("mission.title")}
+                </h2>
                 <p className="text-gray-600 text-lg">
-                  We turn complex ideas into reliable, scalable software by
-                  combining deep technical expertise with a human-centric
-                  approach.
+                  {t("mission.description")}
                 </p>
               </div>
             </div>
@@ -130,13 +130,10 @@ export default function AboutPage() {
         {/* SERVICES CTA */}
         <section className="py-20">
           <div className="max-w-5xl mx-auto text-center px-6">
-            <h2 className="text-3xl font-bold mb-4">What We Do</h2>
-            <p className="text-gray-600 mb-6">
-              From automation to AI-driven platforms, we deliver technology
-              solutions that matter.
-            </p>
+            <h2 className="text-3xl font-bold mb-4">{t("services.title")}</h2>
+            <p className="text-gray-600 mb-6">{t("services.description")}</p>
             <Link href="/services">
-              <Button variant="outline">Explore Services</Button>
+              <Button variant="outline">{t("services.hook")}</Button>
             </Link>
           </div>
         </section>
@@ -145,7 +142,7 @@ export default function AboutPage() {
         <section className="bg-gray-50 py-24">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-16">
-              Our Core Values
+              {t("values.title")}
             </h2>
 
             <div className="grid md:grid-cols-3 gap-10">
@@ -159,10 +156,11 @@ export default function AboutPage() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="font-semibold text-xl mb-2">Integrity</h3>
+                <h3 className="font-semibold text-xl mb-2">
+                  {t("values.integrity.title")}
+                </h3>
                 <p className="text-gray-600">
-                  We act with honesty, transparency, and accountability in
-                  everything we do.
+                  {t("values.integrity.description")}
                 </p>
               </div>
 
@@ -176,9 +174,11 @@ export default function AboutPage() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="font-semibold text-xl mb-2">Innovation</h3>
+                <h3 className="font-semibold text-xl mb-2">
+                  {t("values.innovation.title")}
+                </h3>
                 <p className="text-gray-600">
-                  We challenge the status quo and continuously push boundaries.
+                  {t("values.innovation.description")}
                 </p>
               </div>
 
@@ -192,10 +192,11 @@ export default function AboutPage() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="font-semibold text-xl mb-2">Excellence</h3>
+                <h3 className="font-semibold text-xl mb-2">
+                  {t("values.excellence.title")}
+                </h3>
                 <p className="text-gray-600">
-                  We strive for high-quality outcomes and long-term value
-                  creation.
+                  {t("values.excellence.description")}
                 </p>
               </div>
             </div>
@@ -206,10 +207,11 @@ export default function AboutPage() {
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-bold">Leadership</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                {t("leadership.title")}
+              </h2>
               <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-                Experienced leaders guiding Achhe Code with clarity, vision, and
-                purpose.
+                {t("leadership.description")}
               </p>
             </div>
 
@@ -235,34 +237,29 @@ export default function AboutPage() {
         {/* WHY ACHHE CODE */}
         <section className="py-24 bg-white">
           <div className="max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-6">Why Achhe Code?</h2>
+            <h2 className="text-3xl font-bold mb-6">{t("why.title")}</h2>
             <p className="text-gray-600 max-w-3xl mx-auto mb-12">
-              We combine engineering excellence, business understanding, and
-              long-term partnerships to deliver technology that truly works.
+              {t("why.description")}
             </p>
 
             <div className="grid md:grid-cols-3 gap-10">
               <div>
-                <h3 className="font-semibold text-lg mb-2">Client-Centric</h3>
-                <p className="text-gray-600">
-                  Solutions designed around real business needs.
-                </p>
+                <h3 className="font-semibold text-lg mb-2">
+                  {t("why.1.title")}
+                </h3>
+                <p className="text-gray-600">{t("why.1.description")}</p>
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">
-                  Scalable Engineering
+                  {t("why.2.title")}
                 </h3>
-                <p className="text-gray-600">
-                  Built to grow with your organization.
-                </p>
+                <p className="text-gray-600">{t("why.2.description")}</p>
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">
-                  Trusted Partnerships
+                  {t("why.3.title")}
                 </h3>
-                <p className="text-gray-600">
-                  Long-term collaboration over short-term delivery.
-                </p>
+                <p className="text-gray-600">{t("why.3.description")}</p>
               </div>
             </div>
           </div>
@@ -271,13 +268,12 @@ export default function AboutPage() {
         {/* CAREERS CTA */}
         <section className="bg-cyan-600 py-20 text-white text-center">
           <div className="max-w-4xl mx-auto px-6">
-            <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
-            <p className="mb-6">
-              We’re always looking for innovative talent ready to make an
-              impact.
-            </p>
+            <h2 className="text-3xl font-bold mb-4">
+              {t("careers.cta.title")}
+            </h2>
+            <p className="mb-6">{t("careers.cta.description")}</p>
             <Link href="/careers">
-              <Button variant="secondary">View Careers</Button>
+              <Button variant="secondary">{t("careers.cta.hook")}</Button>
             </Link>
           </div>
         </section>

@@ -5,31 +5,34 @@ import { Footer } from "@/components/custom/layout/footer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-
-const openings = [
-  {
-    title: "Frontend Developer",
-    location: "Remote / India",
-    type: "Full-time",
-  },
-  {
-    title: "Backend Developer",
-    location: "Remote / India",
-    type: "Full-time",
-  },
-  {
-    title: "AI / ML Engineer",
-    location: "Remote",
-    type: "Full-time",
-  },
-  {
-    title: "DevOps Engineer",
-    location: "Remote",
-    type: "Full-time",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function CareerPage() {
+  const t = useTranslations("CareersPage");
+
+  const openings = [
+    {
+      title: t("open_positions.titles.1"),
+      location: t("open_positions.locations.1"),
+      type: t("open_positions.types.1"),
+    },
+    {
+      title: t("open_positions.titles.2"),
+      location: t("open_positions.locations.1"),
+      type: t("open_positions.types.1"),
+    },
+    {
+      title: t("open_positions.titles.3"),
+      location: t("open_positions.locations.2"),
+      type: t("open_positions.types.1"),
+    },
+    {
+      title: t("open_positions.titles.4"),
+      location: t("open_positions.locations.2"),
+      type: t("open_positions.types.1"),
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -39,12 +42,9 @@ export default function CareerPage() {
         <section className="bg-gray-50 py-24">
           <div className="max-w-5xl mx-auto text-center px-6">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-              Careers at Achhe Code
+              {t("heading")}
             </h1>
-            <p className="mt-6 text-lg text-gray-600">
-              We’re building a team of innovators, problem-solvers, and
-              technology enthusiasts shaping the future together.
-            </p>
+            <p className="mt-6 text-lg text-gray-600">{t("description")}</p>
           </div>
         </section>
 
@@ -53,21 +53,15 @@ export default function CareerPage() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-14 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-6">
-                  Why Work With Achhe Code?
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  At Achhe Code, we believe in empowering our people to do their
-                  best work. We foster a culture of learning, ownership, and
-                  collaboration.
-                </p>
+                <h2 className="text-3xl font-bold mb-6">{t("why.title")}</h2>
+                <p className="text-gray-600 mb-6">{t("why.description")}</p>
 
                 <ul className="space-y-4 text-gray-700">
-                  <li>✔ Challenging and meaningful projects</li>
-                  <li>✔ Remote-friendly work culture</li>
-                  <li>✔ Learning & growth opportunities</li>
-                  <li>✔ Transparent leadership</li>
-                  <li>✔ Work-life balance</li>
+                  <li>✔ {t("why.highlights.1")}</li>
+                  <li>✔ {t("why.highlights.2")}</li>
+                  <li>✔ {t("why.highlights.3")}</li>
+                  <li>✔ {t("why.highlights.4")}</li>
+                  <li>✔ {t("why.highlights.5")}</li>
                 </ul>
               </div>
 
@@ -86,32 +80,38 @@ export default function CareerPage() {
         {/* CULTURE & VALUES */}
         <section className="bg-gray-50 py-24">
           <div className="max-w-7xl mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-6">Our Culture</h2>
+            <h2 className="text-3xl font-bold mb-6">
+              {t("culture_and_values.heading")}
+            </h2>
             <p className="text-gray-600 max-w-3xl mx-auto mb-14">
-              We value integrity, innovation, and excellence in everything we
-              do. Our culture is built on trust, curiosity, and continuous
-              improvement.
+              {t("culture_and_values.description")}
             </p>
 
             <div className="grid md:grid-cols-3 gap-10">
               <div className="bg-white p-8 rounded-2xl shadow-sm">
-                <h3 className="font-semibold text-xl mb-3">Innovation</h3>
+                <h3 className="font-semibold text-xl mb-3">
+                  {t("culture_and_values.1.title")}
+                </h3>
                 <p className="text-gray-600">
-                  We encourage creative thinking and bold ideas.
+                  {t("culture_and_values.1.description")}
                 </p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-sm">
-                <h3 className="font-semibold text-xl mb-3">Ownership</h3>
+                <h3 className="font-semibold text-xl mb-3">
+                  {t("culture_and_values.2.title")}
+                </h3>
                 <p className="text-gray-600">
-                  Everyone takes responsibility and drives impact.
+                  {t("culture_and_values.2.description")}
                 </p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-sm">
-                <h3 className="font-semibold text-xl mb-3">Growth</h3>
+                <h3 className="font-semibold text-xl mb-3">
+                  {t("culture_and_values.3.title")}
+                </h3>
                 <p className="text-gray-600">
-                  Continuous learning is part of our DNA.
+                  {t("culture_and_values.3.description")}
                 </p>
               </div>
             </div>
@@ -122,9 +122,11 @@ export default function CareerPage() {
         <section className="py-24 bg-white">
           <div className="max-w-5xl mx-auto px-6">
             <div className="text-center mb-14">
-              <h2 className="text-3xl font-bold">Open Positions</h2>
+              <h2 className="text-3xl font-bold">
+                {t("open_positions.title")}
+              </h2>
               <p className="mt-4 text-gray-600">
-                Explore opportunities to grow your career with us.
+                {t("open_positions.description")}
               </p>
             </div>
 
@@ -142,7 +144,7 @@ export default function CareerPage() {
                   </div>
 
                   <Link href="/careers/apply">
-                    <Button>Apply Now</Button>
+                    <Button>{t("open_positions.apply_now")}</Button>
                   </Link>
                 </div>
               ))}
@@ -153,16 +155,11 @@ export default function CareerPage() {
         {/* CTA */}
         <section className="bg-cyan-600 py-20 text-white text-center">
           <div className="max-w-4xl mx-auto px-6">
-            <h2 className="text-3xl font-bold mb-4">
-              Don’t See the Right Role?
-            </h2>
-            <p className="mb-6">
-              We’re always open to connecting with talented people. Send us
-              your resume and we’ll get in touch.
-            </p>
+            <h2 className="text-3xl font-bold mb-4">{t("cta.title")}</h2>
+            <p className="mb-6">{t("cta.description")}</p>
 
             <Link href="/contact">
-              <Button variant="secondary">Submit Your Resume</Button>
+              <Button variant="secondary">{t("cta.hook")}</Button>
             </Link>
           </div>
         </section>
