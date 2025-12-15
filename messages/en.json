@@ -317,5 +317,56 @@
       "description": "We’re always open to connecting with talented people. Send us your resume and we’ll get in touch.",
       "hook": "Submit Your Resume"
     }
+  },
+  "ApplyPage": {
+    "heading": "Apply Now",
+    "description": "Submit your application and take the next step in your career with Achhe Code.",
+    "field_id": {
+      "1": {
+        "label_name": "Job ID / Position",
+        "placeholder": "e.g. Frontend Developer"
+      },
+      "2": {
+        "label_name": "Full Name",
+        "placeholder": "Your full name"
+      },
+      "3": {
+        "label_name": "Email Address",
+        "placeholder": "you@email.com"
+      },
+      "4": {
+        "label_name": "Phone Number",
+        "placeholder_1": "+91",
+        "placeholder_2": "Phone number"
+      },
+      "5": {
+        "label_name": "Years of Experience",
+        "placeholder": "e.g. 3 years"
+      },
+      "6": {
+        "label_name": "Cover Message",
+        "placeholder": "Tell us why you'd be a great fit"
+      },
+      "7": {
+        "label_name": "Upload Resume",
+        "placeholder": "Click to upload (PDF, DOC, DOCX)"
+      }
+    },
+    "submit": "Submit Application"
+  },
+  "ThankYouPage": {
+    "heading": "Thank You for Applying!",
+    "description": {
+      "1": "Your application has been successfully submitted to",
+      "2": ". Our team will review your profile and reach out if your experience matches our requirements."
+    },
+    "actions": {
+      "button_1": "View More Opportunities",
+      "button_2": "Go to Home"
+    },
+    "extra_note": {
+      "1": "Didn’t receive a confirmation email? Please check your spam folder or contact us at",
+      "2": "careers@achhecode.com"
+    }
   }
 }

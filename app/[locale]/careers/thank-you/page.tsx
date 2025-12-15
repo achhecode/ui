@@ -5,8 +5,11 @@ import { Footer } from "@/components/custom/layout/footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function ThankYouPage() {
+  const t = useTranslations("ThankYouPage");
+
   return (
     <>
       <Header />
@@ -20,43 +23,35 @@ export default function ThankYouPage() {
 
           {/* Heading */}
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Thank You for Applying!
+            {t("heading")}
           </h1>
 
           {/* Message */}
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
-            Your application has been successfully submitted to{" "}
-            <span className="font-semibold text-gray-900">
-              Achhe Code
-            </span>
-            . Our team will review your profile and reach out if your
-            experience matches our requirements.
+            {t("description.1")}{" "}
+            <span className="font-semibold text-gray-900">Achhe Code</span>
+            {t("description.2")}
           </p>
 
           {/* Actions */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/career">
-              <Button variant="outline">
-                View More Opportunities
-              </Button>
+              <Button variant="outline">{t("actions.button_1")}</Button>
             </Link>
 
             <Link href="/">
-              <Button>
-                Go to Home
-              </Button>
+              <Button>{t("actions.button_2")}</Button>
             </Link>
           </div>
 
           {/* Extra note */}
           <p className="mt-12 text-sm text-gray-500">
-            Didn’t receive a confirmation email?  
-            Please check your spam folder or contact us at{" "}
+            {t("extra_note.1")}{" "}
             <a
               href="mailto:careers@achhecode.com"
               className="text-cyan-600 underline"
             >
-              careers@achhecode.com
+              {t("extra_note.2")}
             </a>
           </p>
         </div>
