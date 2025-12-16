@@ -15,6 +15,7 @@ git init
 git add .
 git commit -m "Intial Commit"
 git remote add origin git@github-ac:achhecode/ui.git
+git pull origin main(optional)
 git branch -M main
 git push -u origin main
 ```
