@@ -1,22 +1,22 @@
 {
   "Header": {
-    "title": "Achhe Code!",
+    "title": "¡Código Achhe!",
     "home": "Hogar",
     "services": "Servicios",
     "insights": "Perspectivas",
-    "community": "comunidad",
+    "community": "Comunidad",
     "about": "Acerca de",
     "contact": "Contacto",
     "search": "Buscar..."
   },
   "Footer": {
-    "company_title": "Achhe Code!",
-    "company_description": "Convertimos grandes ideas en código de calidad. Creamos soluciones digitales fiables, escalables e inteligentes.",
+    "company_title": "¡Código Achhe!",
+    "company_description": "Convertir grandes ideas en buen código.\n Construimos soluciones digitales confiables, escalables e inteligentes.",
     "1": {
-      "title": "Quiénes somos",
-      "1": "Acerca de Achhe Code",
+      "title": "Quienes somos",
+      "1": "Acerca del Código Achhe",
       "2": "Liderazgo",
-      "3": "Nuestros valores"
+      "3": ""
     },
     "2": {
       "title": "Servicios",
@@ -24,19 +24,19 @@
       "2": "Inteligencia artificial",
       "3": "Ingeniería de datos",
       "4": "Ciberseguridad",
-      "5": "Consultoría de TI"
+      "5": "Consultoría TI"
     },
     "3": {
       "title": "Enlaces rápidos",
-      "1": "Noticias y comunicados de prensa"
+      "1": "Noticias y relaciones públicas"
     },
     "4": {
       "title": "Contacto",
       "1": "Ponte en contacto",
-      "2": "Envíanos un correo electrónico",
+      "2": "Envíenos un correo electrónico",
       "3": "Llámanos"
     },
-    "copyright_description": "Achhe Code. Todos los derechos reservados.",
+    "copyright_description": "Código Achhe.\n Reservados todos los derechos.",
     "privacy_policy_heading": "política de privacidad"
   },
   "HomePage": {
@@ -50,7 +50,7 @@
     "allservices": {
       "automation": {
         "title": "Automatización",
-        "description": "Optimice las operaciones y aumente la eficiencia mediante soluciones de automatización inteligente."
+        "description": "Optimice las operaciones y aumente la eficiencia a través de soluciones de automatización inteligentes."
       },
       "ai": {
         "title": "Inteligencia artificial (IA)",
@@ -66,11 +66,11 @@
       },
       "banking": {
         "title": "Tecnología bancaria",
-        "description": "Cree soluciones financieras y bancarias seguras, compatibles y escalables."
+        "description": "Cree soluciones bancarias y de tecnología financiera seguras, compatibles y escalables."
       },
       "software": {
         "title": "Desarrollo de software personalizado",
-        "description": "Soluciones de software personalizadas diseñadas para satisfacer las necesidades de su negocio."
+        "description": "Soluciones de software personalizadas creadas para satisfacer las necesidades de su negocio."
       },
       "cloud": {
         "title": "Soluciones en la nube",
@@ -78,27 +78,295 @@
       },
       "consulting": {
         "title": "Consultoría TI",
-        "description": "Orientación estratégica para alinear la tecnología con los objetivos del negocio."
+        "description": "Orientación estratégica para alinear la tecnología con los objetivos de negocio."
       },
       "talent": {
         "title": "Soluciones de talento tecnológico",
-        "description": "Acceda a profesionales tecnológicos capacitados para escalar sus equipos más rápido."
+        "description": "Acceda a profesionales de tecnología capacitados para escalar sus equipos más rápido."
       }
     },
-    "clients_heading": "Con la confianza de nuestros clientes",
+    "clients_heading": "Confiado por nuestros clientes",
     "partners_heading": "Nuestros socios",
-    "vision_title": "Nuestra visión",
-    "vision_heading": "Impulsando las empresas a través de la tecnología.",
-    "vision_description": "Visualizamos un futuro en el que la tecnología permita a las organizaciones innovar más rápidamente, operar de forma más inteligente y expandirse a nivel global.",
-    "careers_title": "Carreras profesionales en Achhe Code",
-    "careers_description": "Buscamos personas con talento e innovadoras para unirse a nuestro equipo. Explora las oportunidades disponibles y envía tu currículum hoy mismo.",
-    "careers_cta": "Ver puestos vacantes"
+    "vision_title": "Nuestra Visión",
+    "vision_heading": "Empoderar a las empresas a través de la tecnología",
+    "vision_description": "Visualizamos un futuro en el que la tecnología permita a las organizaciones innovar más rápido, operar de manera más inteligente y escalar globalmente.",
+    "careers_title": "Carreras en Código Achhe",
+    "careers_description": "Buscamos talento innovador para unirse a nuestro equipo.\n Explore oportunidades y envíe su currículum hoy.",
+    "careers_cta": "Ver posiciones abiertas"
   },
   "ServicesPage": {
-    "heading": "Services",
-    "description": "Servicios tecnológicos integrales diseñados para ayudar a su empresa a innovar, crecer y tener éxito.",
-    "cta_heading": "Crea tu próximo gran negocio ahora.",
-    "cta_description": "Póngase en contacto con nosotros para hablar sobre cómo nuestros servicios pueden ayudarle a alcanzar sus objetivos.",
-    "cta_hook": "Contacta con nosotros"
+    "heading": "Servicios",
+    "description": "Servicios tecnológicos integrales diseñados para ayudar a su empresa a innovar, escalar y tener éxito.",
+    "cta_heading": "Construya su próximo gran negocio ahora",
+    "cta_description": "Póngase en contacto para analizar cómo nuestros servicios pueden respaldar sus objetivos.",
+    "cta_hook": ""
+  },
+  "InsightsPage": {
+    "heading": "Perspectivas",
+    "description": "Perspectivas de expertos, inmersiones técnicas profundas y experiencias del mundo real del equipo de Achhe Code.",
+    "insights": {
+      "1": {
+        "title": "Cómo la IA está transformando el software empresarial",
+        "description": "Explore cómo las soluciones basadas en IA están remodelando las empresas modernas.",
+        "category": "AI"
+      },
+      "2": {
+        "title": "Migración a la nube: mejores prácticas",
+        "description": "Una guía paso a paso para una transformación exitosa en la nube.",
+        "category": "Nube"
+      },
+      "3": {
+        "title": "Ciberseguridad en FinTech",
+        "description": "Desafíos y soluciones de seguridad clave para plataformas bancarias.",
+        "category": "Seguridad"
+      },
+      "cta_hook": "Leer más →"
+    }
+  },
+  "CommunityPage": {
+    "heading": "Nuestra comunidad",
+    "description": "Creemos en crecer juntos compartiendo conocimientos, apoyando el talento y construyendo conexiones significativas.",
+    "initiatives": {
+      "1": {
+        "title": "Contribuciones de código abierto",
+        "description": "Contribuimos activamente a proyectos de código abierto y compartimos conocimientos."
+      },
+      "2": {
+        "title": "Reuniones tecnológicas",
+        "description": "Organizar y participar en reuniones de desarrolladores y hackatones."
+      },
+      "3": {
+        "title": "Programas de tutoría",
+        "description": "Orientar a jóvenes desarrolladores y recién graduados en sus carreras."
+      }
+    },
+    "cta": {
+      "title": "Únase a la comunidad del Código Achhe",
+      "description": "",
+      "hook": "Complicarse"
+    }
+  },
+  "AboutPage": {
+    "heading": "Acerca del Código Achhe",
+    "description": "Achhe Code es una empresa impulsada por la tecnología centrada en crear soluciones digitales escalables, seguras y preparadas para el futuro para empresas de todo el mundo.",
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Empoderar a las organizaciones con tecnología que acelere la innovación, la eficiencia y el crecimiento sostenible en todas las industrias."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Convertimos ideas complejas en software confiable y escalable combinando una profunda experiencia técnica con un enfoque centrado en el ser humano."
+    },
+    "services": {
+      "title": "Qué hacemos",
+      "description": "Desde la automatización hasta las plataformas impulsadas por IA, ofrecemos soluciones tecnológicas que importan.",
+      "hook": "Explorar servicios"
+    },
+    "values": {
+      "title": "Nuestros valores fundamentales",
+      "integrity": {
+        "title": "Integridad",
+        "description": "Actuamos con honestidad, transparencia y responsabilidad en todo lo que hacemos."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "Desafiamos el status quo y traspasamos los límites continuamente."
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "description": "Nos esforzamos por lograr resultados de alta calidad y creación de valor a largo plazo."
+      }
+    },
+    "leadership": {
+      "title": "Liderazgo",
+      "description": "Líderes experimentados que guían el Código Achhe con claridad, visión y propósito."
+    },
+    "why": {
+      "title": "¿Por qué el Código Achhe?",
+      "description": "Combinamos excelencia en ingeniería, comprensión empresarial y asociaciones a largo plazo para ofrecer tecnología que realmente funcione.",
+      "1": {
+        "title": "",
+        "description": "Soluciones diseñadas en torno a necesidades reales del negocio."
+      },
+      "2": {
+        "title": "Ingeniería escalable",
+        "description": "Creado para crecer con su organización."
+      },
+      "3": {
+        "title": "Asociaciones confiables",
+        "description": "Colaboración a largo plazo sobre entrega a corto plazo."
+      }
+    },
+    "careers": {
+      "cta": {
+        "title": "Únase a nuestro equipo",
+        "description": "Siempre estamos buscando talento innovador listo para generar un impacto.",
+        "hook": "Ver carreras"
+      }
+    },
+    "team_members": {
+      "1": {
+        "name": "AR danés",
+        "role": ""
+      },
+      "2": {
+        "name": "Md Murad",
+        "role": ""
+      },
+      "3": {
+        "name": "Arshad Iqbal",
+        "role": ""
+      },
+      "4": {
+        "name": "Md Aatif",
+        "role": "Director Senior - Desarrollo de Negocios"
+      },
+      "5": {
+        "name": "Md Gulrez",
+        "role": "Líder de desarrollo"
+      }
+    }
+  },
+  "ContactPage": {
+    "heading": "",
+    "description": "Hablemos de cómo Achhe Code puede ayudarle a transformar sus ideas en soluciones tecnológicas escalables.",
+    "offices": {
+      "title": "Nuestra oficina – India"
+    },
+    "contact_info_card": {
+      "location_title": "Ubicación de la oficina",
+      "1": {
+        "name": "Código Achhe Pvt Ltd",
+        "address": "Bangalore, Karnataka, India",
+        "mail": "contacto@achhecode.com",
+        "phone": "+91 99999 99999"
+      }
+    },
+    "form": {
+      "name_label": "Nombre completo",
+      "email_label": "Correo electrónico",
+      "phone_label": "Número de teléfono",
+      "message_label": "Tu mensaje",
+      "agree": "Estoy de acuerdo con el",
+      "term": "Condiciones de uso",
+      "agree_2": "Al enviar este formulario, acepta recibir mensajes de texto (SMS) de Achhe Code Pvt Ltd.",
+      "submit": "Entregar"
+    },
+    "services": {
+      "title": "¿Busca formas en las que el Código Achhe pueda ayudarle?",
+      "description": "Explore nuestras ofertas de servicios adaptadas a las necesidades de su negocio.",
+      "cta": "Ver servicios"
+    },
+    "term_modal": {
+      "title": "Condiciones de uso",
+      "description": "Al utilizar este sitio, acepta nuestros términos y condiciones con respecto al uso de datos, la comunicación y la privacidad.",
+      "close": "Cerca"
+    }
+  },
+  "CareersPage": {
+    "heading": "Carreras en Código Achhe",
+    "description": "Estamos formando un equipo de innovadores, solucionadores de problemas y entusiastas de la tecnología que juntos darán forma al futuro.",
+    "why": {
+      "title": "¿Por qué trabajar con el código Achhe?",
+      "description": "En Achhe Code, creemos en capacitar a nuestra gente para que haga su mejor trabajo.\n Fomentamos una cultura de aprendizaje, propiedad y colaboración.",
+      "highlights": {
+        "1": "Proyectos desafiantes y significativos",
+        "2": "Cultura de trabajo remota",
+        "3": "Oportunidades de aprendizaje y crecimiento",
+        "4": "Liderazgo transparente",
+        "5": "Equilibrio vida-trabajo"
+      }
+    },
+    "culture_and_values": {
+      "heading": "Nuestra Cultura",
+      "description": "Valoramos la integridad, la innovación y la excelencia en todo lo que hacemos.\n Nuestra cultura se basa en la confianza, la curiosidad y la mejora continua.",
+      "1": {
+        "title": "Innovación",
+        "description": "Fomentamos el pensamiento creativo y las ideas audaces."
+      },
+      "2": {
+        "title": "Propiedad",
+        "description": "Todos asumen la responsabilidad e impulsan el impacto."
+      },
+      "3": {
+        "title": "Crecimiento",
+        "description": "El aprendizaje continuo es parte de nuestro ADN."
+      }
+    },
+    "open_positions": {
+      "title": "Posiciones abiertas",
+      "description": "Explore oportunidades para hacer crecer su carrera con nosotros.",
+      "locations": {
+        "1": "",
+        "2": ""
+      },
+      "types": {
+        "1": "Jornada completa",
+        "2": "Contrato"
+      },
+      "titles": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "Ingeniero DevOps"
+      },
+      "apply_now": "Aplicar ahora"
+    },
+    "cta": {
+      "title": "¿No ve el rol correcto?",
+      "description": "Siempre estamos abiertos a conectarnos con personas talentosas.\n Envíanos tu currículum y nos pondremos en contacto.",
+      "hook": "Envíe su currículum"
+    }
+  },
+  "ApplyPage": {
+    "heading": "Aplicar ahora",
+    "description": "Envíe su solicitud y dé el siguiente paso en su carrera con Achhe Code.",
+    "field_id": {
+      "1": {
+        "label_name": "ID de trabajo/posición",
+        "placeholder": ""
+      },
+      "2": {
+        "label_name": "Nombre completo",
+        "placeholder": "Tu nombre completo"
+      },
+      "3": {
+        "label_name": "Dirección de correo electrónico",
+        "placeholder": "usted@correo electrónico.com"
+      },
+      "4": {
+        "label_name": "Número de teléfono",
+        "placeholder_1": "+91",
+        "placeholder_2": "Número de teléfono"
+      },
+      "5": {
+        "label_name": "Años de experiencia",
+        "placeholder": "p.ej.\n 3 años"
+      },
+      "6": {
+        "label_name": "Mensaje de portada",
+        "placeholder": "Cuéntanos por qué encajarías perfectamente"
+      },
+      "7": {
+        "label_name": "Subir currículum",
+        "placeholder": "Haga clic para cargar (PDF, DOC, DOCX)"
+      }
+    },
+    "submit": "Enviar solicitud"
+  },
+  "ThankYouPage": {
+    "heading": "¡Gracias por aplicar!",
+    "description": {
+      "1": "Su solicitud ha sido enviada exitosamente a",
+      "2": ".\n Nuestro equipo revisará su perfil y se comunicará si su experiencia coincide con nuestros requisitos."
+    },
+    "actions": {
+      "button_1": "Ver más oportunidades",
+      "button_2": "Ir a casa"
+    },
+    "extra_note": {
+      "1": "¿No recibiste un correo electrónico de confirmación?\n Por favor revise su carpeta de spam o contáctenos en",
+      "2": "carreras@achhecode.com"
+    }
   }
 }
